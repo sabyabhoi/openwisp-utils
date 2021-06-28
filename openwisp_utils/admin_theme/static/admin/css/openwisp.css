@@ -2,6 +2,10 @@ body {
   min-width: 320px;
   height: auto;
 }
+.force-inactive {
+  opacity: 0.2 !important;
+  pointer-events: none !important;
+}
 #main-content .breadcrumbs,
 .module caption {
   padding: 16px;
@@ -287,6 +291,8 @@ input[type='button']:hover,
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #00000026;
 }
 .hamburger i {
   background: url(../../ui/openwisp/images/hamburger.svg);
@@ -984,16 +990,14 @@ h1#site-name {
 
 /* IPAN ICONS */
 
-.ow-ipam  {
+.ow-ipam {
   mask-image: url(../../ui/openwisp/images/ipam.svg);
   -webkit-mask-image: url(../../ui/openwisp/images/ipam.svg);
 }
-
 .ow-subnet {
   mask-image: url(../../ui/openwisp/images/subnet.svg);
   -webkit-mask-image: url(../../ui/openwisp/images/subnet.svg);
 }
-
 .ow-ip-address {
   mask-image: url(../../ui/openwisp/images/ip-address.svg);
   -webkit-mask-image: url(../../ui/openwisp/images/ip-address.svg);
